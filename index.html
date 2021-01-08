@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>League of Leagues</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -11,10 +12,25 @@
         <h1>League of Leagues</h1>
     </header>
     <main>
-        
+        <section>
+            <div class="optionBar">
+                <select class="options" name="playerOptions" id="playerOptions">
+                    <option value="createTeam">Create a Team</option>
+                    <option value="currentTeams">Current Teams</option>
+                    <option value="freeAgent">Free-Agent</option>
+                </select>
+                <select class="options" name="scheduleOptions" id="scheduleOptions">
+                    <option value="schedule">Schedule</option>
+                    <option value="scheduleMatch">Schedule a Match</option>
+                    <option value="scheduleScrim">Schedule a Scrim</option>
+                </select>
+                <a href="" class="options">Login</a>
+            </div>
+        </section>
     </main>
     <footer>
         <p>Created by Ryan Conley</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

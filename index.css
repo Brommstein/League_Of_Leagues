@@ -1,0 +1,14 @@
+header {
+    text-align: center;
+}
+.optionBar {
+    display: flex;
+    justify-content: space-around;
+}
+.options {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+}
