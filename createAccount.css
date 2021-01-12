@@ -1,0 +1,12 @@
+form {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.border {
+    border: solid 1px black;
+    padding: 10px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="createAccount.css">
+</head>
+<body>
+    <h1>League of Leagues</h1>
+    <br>
+    <form action="createAccount" class="border">
+        <label for="username">Username: </label>
+        <input type="text" id="username">
+        <p></p>
+        <label for="password">Password: </label>
+        <input type="text" id="password">
+        <p></p>
+        <label for="preferedRole">What is your prefered role? </label>
+        <select name="preferedRole" id="preferedRole">
+            <option value="top">Top</option>
+            <option value="jungle">Jungle</option>
+            <option value="mid">Mid</option>
+            <option value="adc">ADC</option>
+            <option value="support">Support</option>
+        </select>
+        <p></p>
+        <label for="secondaryRole">What is your secondary role? </label>
+        <select name="secondaryRole" id="secondaryRole">
+            <option value="none">None</option>
+            <option value="top">Top</option>
+            <option value="jungle">Jungle</option>
+            <option value="mid">Mid</option>
+            <option value="adc">ADC</option>
+            <option value="support">Support</option>
+        </select>
+        <p></p>
+        <button type="submit">Submit</button>
+        <a href="index.html">Cancel</a>
+    </form>
+</body>
+</html>
