@@ -1,20 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Account</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <header>
         <h1>League of Leagues</h1>
     </header>
     <main>
-        
+        <form action="editAccount" class="border">
+            <label for="newPassword">New Password: </label>
+            <input type="password" id="newPassword" required>
+            <p></p>
+            <label for="leagueName">What is your new name on League of Legends? </label>
+            <input type="text" id="leagueName" required>
+            <p></p>
+            <label for="preferedRole">What is your prefered role? </label>
+            <select name="preferedRole" id="preferedRole" required>
+                <option value="top">Top</option>
+                <option value="jungle">Jungle</option>
+                <option value="mid">Mid</option>
+                <option value="adc">ADC</option>
+                <option value="support">Support</option>
+            </select>
+            <p></p>
+            <label for="secondaryRole">What is your secondary role? </label>
+            <select name="secondaryRole" id="secondaryRole">
+                <option value="none">None</option>
+                <option value="top">Top</option>
+                <option value="jungle">Jungle</option>
+                <option value="mid">Mid</option>
+                <option value="adc">ADC</option>
+                <option value="support">Support</option>
+            </select>
+            <p></p>
+            <div>
+                <p>What days are you able to play?</p>
+                <div class="flexBox">
+                    <input type="checkbox" class="flex">Sunday
+                    <input type="checkbox" class="flex">Monday
+                    <input type="checkbox" class="flex">Tuesday
+                    <input type="checkbox" class="flex">Wednesday
+                    <input type="checkbox" class="flex">Thursday
+                    <input type="checkbox" class="flex">Friday
+                    <input type="checkbox" class="flex">Saturday
+                </div>
+            </div>
+            <p></p>
+            <label for="championChoice">What champions do you play?</label>
+            <p></p>
+            <form action="championChoice">
+                <div class="flexBox">
+                    <div class="flex">
+                        <input type="checkbox" id="1" name="champChoice" value="ahri">
+                        <label for="ahri">Ahri</label><br>
+                        <input type="checkbox" id="2" name="champChoice" value="braum">
+                        <label for="braum">Braum</label><br>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" id="3" name="champChoice" value="cassiopia">
+                        <label for="cassiopia">Cassiopia</label><br>
+                        <input type="checkbox" id="4" name="champChoice" value="darius">
+                        <label for="darius">Darius</label><br>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" id="5" name="champChoice" value="fiora">
+                        <label for="fiora">Fiora</label><br>
+                        <input type="checkbox" id="6" name="champChoice" value="gnar">
+                        <label for="gnar">Gnar</label><br>
+                    </div>
+                </div>
+                <p></p>
+                <button type="submit">Submit</button>
+                <a href="index.html">Cancel</a>
+            </form>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
