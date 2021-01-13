@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <h1>League of Leagues</h1>
     <br>
     <form action="createAccount" class="border">
         <label for="username">Username: </label>
-        <input type="text" id="username">
+        <input type="text" id="username" required>
         <p></p>
         <label for="password">Password: </label>
-        <input type="text" id="password">
+        <input type="password" id="password" required>
+        <p></p>
+        <label for="leagueName">What is your name on League of Legends? </label>
+        <input type="text" id="leagueName" required>
         <p></p>
         <label for="preferedRole">What is your prefered role? </label>
-        <select name="preferedRole" id="preferedRole">
+        <select name="preferedRole" id="preferedRole" required>
             <option value="top">Top</option>
             <option value="jungle">Jungle</option>
             <option value="mid">Mid</option>
@@ -35,8 +40,34 @@
             <option value="support">Support</option>
         </select>
         <p></p>
+        <label for="championChoice">What champions do you play?</label>
+        <p></p>
+        <form action="championChoice">
+            <div class="flexBox">
+                <div class="flex">
+                    <input type="checkbox" id="1" name="champChoice" value="ahri">
+                    <label for="ahri">Ahri</label><br>
+                    <input type="checkbox" id="2" name="champChoice" value="braum">
+                    <label for="braum">Braum</label><br>
+                </div>
+                <div class="flex">
+                    <input type="checkbox" id="3" name="champChoice" value="cassiopia">
+                    <label for="cassiopia">Cassiopia</label><br>
+                    <input type="checkbox" id="4" name="champChoice" value="darius">
+                    <label for="darius">Darius</label><br>
+                </div>
+                <div class="flex">
+                    <input type="checkbox" id="5" name="champChoice" value="fiora">
+                    <label for="fiora">Fiora</label><br>
+                    <input type="checkbox" id="6" name="champChoice" value="gnar">
+                    <label for="gnar">Gnar</label><br>
+                </div>
+            </div>
+        </form>
+        <p></p>
         <button type="submit">Submit</button>
         <a href="index.html">Cancel</a>
     </form>
 </body>
+
 </html>
